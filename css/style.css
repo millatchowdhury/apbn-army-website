@@ -745,3 +745,24 @@ li::before {
   display: inline;
   margin-left: 20px;
 }
+
+/* news menu  */
+.news-menu {
+  background: #2C486E;
+  margin-top: 40px;
+}
+.news-menu ul{
+  list-style-type: none;
+}
+.news-menu ul li{
+  display: inline-block;
+}
+.news-menu ul li a {
+  font-family: "Fira Sans", sans-serif;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 10px;
+}
