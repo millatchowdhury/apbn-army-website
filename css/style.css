@@ -562,3 +562,39 @@ li::before {
   padding: 0;
   margin: 0;
 }
+/* homepage  */
+.home-page-area{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+}
+.home-page-logo{
+  width: 80%;
+}
+.home-page-logo img{
+  width: 100%;
+}
+.home-button-wrapper{
+
+}
+.homebutton {
+  width: 182px;
+  margin-top: 80px;
+}
+.homebutton ul{
+  text-align: center;
+  list-style-type: none;
+}
+.homebutton ul li{
+}
+.homebutton ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+}
