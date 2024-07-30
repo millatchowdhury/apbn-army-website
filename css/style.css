@@ -55,9 +55,9 @@
     color: #fff;
     font-size: 13px;
 }
-input::placeholder{
+/* input::placeholder{
     color: #fff;
-}
+} */
 .language ul{
     list-style-type: none;
 }
@@ -597,4 +597,41 @@ li::before {
   border: 2px solid #fff;
   margin-bottom: 10px;
   padding: 15px 30px;
+}
+/* information form page  */
+.info-form-area{
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.info-form-area input{
+  border: 1px solid #8A423A;
+  width: 100%;
+  margin: 8px;
+  padding: 4px 12px;
+  border-radius: 5px;
+}
+
+.form5 input {
+  border: 1px solid #8A423A;
+  margin: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.form6 input {
+  border: 1px solid #8A423A;
+  width: 100%;
+  margin: 10px;
+  border-radius: 5px;
+  /* height: 180px; */
+  padding-bottom: 150px;
+}
+.form-submit{
+  text-align: center;
+}
+.form-submit button {
+  border: 1px solid #8A423A;
+  padding: 5px 20px;
+  color: #8A423A;
+  margin: 30px 0;
+  border-radius: 5px;
 }
