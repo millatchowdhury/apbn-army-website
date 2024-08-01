@@ -766,3 +766,27 @@ li::before {
   display: inline-block;
   padding: 6px 10px;
 }
+/* news details  */
+.news-details-area{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.news-details-content{}
+.news-details-content img {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  float: left;
+  margin-right: 25px;
+}
+.news-details-content h3 {
+  display: block;
+  font-family: "Fira Sans", sans-serif;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 30px;
+}
+.news-details-content p{
+  display: inline;
+}
