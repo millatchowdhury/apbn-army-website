@@ -790,3 +790,162 @@ li::before {
 .news-details-content p{
   display: inline;
 }
+
+/* faq start  */
+.faq-section .accordion {
+  width: 100%;
+}
+
+.accordion-button:not(.collapsed) {
+  /* background-color: #c5e5d8;*/
+  background-color: #e9fff3;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: none;
+  transform: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:before {
+  content: "";
+  position: absolute;
+  /*   right: 0.75rem; */
+  right: 0.75rem;
+  top: 1.25rem;
+  height: 2px;
+  width: 1rem;
+  background-color: #4f8f70;
+}
+.accordion-button.collapsed:after {
+  content: "";
+  position: absolute;
+  /*   right: 1.1875rem; */
+  right: 1.1875rem;
+  top: 0.8125rem;
+  height: 1.0625rem;
+  width: 0.125rem;
+  border-style: none;
+  background-color: #4f8f70;
+}
+
+.faq-section .accordion-button h5 {
+  /*   color: #7dbc9e; */
+  color: #4f8f70;
+  margin-right: 13px;
+}
+.accordion-body {
+  background-color: #e9fff3;
+}
+
+section.faq-section.py-3 {
+  margin-top: 40px;
+}
+/* button:focus:not(:focus-visible) {
+    outline: 0;
+} */
+
+@media screen and (min-width: 768px) {
+  /*   .faq-section .accordion {
+    width: 50%;
+    margin: 0 auto;
+  } */
+
+  .accordion-button:before {
+    right: 0.75rem;
+  }
+
+  .accordion-button.collapsed:after {
+    right: 1.1875rem;
+  }
+
+  .faq-section .accordion-button h5 {
+    margin-right: 0px;
+  }
+}
+
+/* gallery start  */
+
+.heading {
+  text-align: center;
+  font-size: 2.0em;
+  letter-spacing: 1px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.gallery-image {
+padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.gallery-image img {
+height: 250px;
+width: 350px;
+transform: scale(1.0);
+transition: transform 0.4s ease;
+}
+
+.img-box {
+box-sizing: content-box;
+margin: 10px;
+height: 250px;
+width: 350px;
+overflow: hidden;
+display: inline-block;
+color: white;
+position: relative;
+background-color: white;
+}
+
+.caption {
+position: absolute;
+bottom: 5px;
+left: 20px;
+opacity: 0.0;
+transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+height: 250px;
+width: 350px;
+background-color:rgba(0, 0, 0, 0);
+position: absolute;
+top: 0;
+left: 0;
+transition: background-color 0.3s ease;
+opacity: 0;
+display: none;
+}
+
+.img-box:hover img { 
+transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+transform: translateY(-20px);
+opacity: 1.0;
+}
+
+.img-box:hover {
+cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+font-size: 0.8em;
+}
+
+.opacity-low {
+opacity: 0.5;
+}
