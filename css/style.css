@@ -89,10 +89,12 @@
 }
 /* header bottom  */
 .header-bottom-area{
-    background: #C7C7C7;
+  background: linear-gradient(rgba(217,217,217,1) 35%, rgba(156,156,156,1) 100%);
     height: 70px;
 }
-.main-menu{}
+.main-menu{
+  
+}
 .main-menu ul{
     list-style-type: none;
     margin: 0;
@@ -109,15 +111,77 @@
     font-weight: 500;
     font-size: 20px;
     display: inline-block;
-    padding: 20px 35px;
-}
-.main-menu ul li a{
+    padding: 20px 30px;
     position: relative;
+    z-index: 1;
+
 }
-.main-menu ul li a::before{
-    position: absolute;
+.main-menu ul li a span{
+  position: relative;
 }
-.main-menu ul li a:hover{}
+
+.main-menu ul li a span::before {
+  position: absolute;
+  top: -23px;
+  left: -38px;
+  content: "";
+  width: 120px;
+  height: 70px;
+  z-index: -1;
+  transform: skew(-45deg);
+}
+
+
+.main-menu ul li a span{
+  transition: .7s;
+}
+.main-menu ul li:nth-child(1) a span::before{
+  
+  width: 128px;
+}
+.main-menu ul li:nth-child(2) a span::before{
+  
+  width: 158px;
+}
+.main-menu ul li:nth-child(3) a span::before{
+  width: 123px;
+}
+.main-menu ul li:nth-child(4) a span::before{
+  
+  width: 124px;
+}
+.main-menu ul li:nth-child(5) a span::before{
+  
+  width: 134px;
+}
+.main-menu ul li:nth-child(6) a span::before{
+  
+  width: 140px;
+}
+.main-menu ul li:nth-child(7) a span::before{
+  
+  width: 145px;
+}
+
+
+.main-menu ul li a span::after {
+  background: linear-gradient(rgba(34,87,160,1) 35%, rgba(45,73,111,1) 100%);
+  position: absolute;
+  top: -23px;
+  left: -38px;
+  content: "";
+  width: 2px;
+  height: 70px;
+  z-index: -1;
+  transform: skew(-45deg);
+}
+.main-menu ul li a:hover{
+  color: #fff;
+}
+.main-menu ul li a:hover span::before{
+  background: linear-gradient(rgba(34,87,160,1) 35%, rgba(45,73,111,1) 100%);
+}
+
 
 .slider-area{
     height: 590px;
@@ -395,7 +459,7 @@ li::before {
   margin: 0;
   padding: 0;
 }
-.help-links ul li{}
+
 .help-links ul li a{
   font-family: "Oswald", sans-serif;
   color: #ADADAD;
@@ -577,9 +641,7 @@ li::before {
 .home-page-logo img{
   width: 100%;
 }
-.home-button-wrapper{
 
-}
 .homebutton {
   width: 182px;
   margin-top: 80px;
@@ -588,8 +650,7 @@ li::before {
   text-align: center;
   list-style-type: none;
 }
-.homebutton ul li{
-}
+
 .homebutton ul li a {
   display: block;
   text-decoration: none;
@@ -771,7 +832,6 @@ li::before {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.news-details-content{}
 .news-details-content img {
   width: 200px;
   height: 200px;
